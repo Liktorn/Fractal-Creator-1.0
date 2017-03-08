@@ -1,4 +1,5 @@
 #include <complex>
+#include <iostream>
 #include "Mandelbrot.h"
 
 
@@ -30,6 +31,10 @@ int Mandelbrot::getIterations(double x, double y) {
 			break;
 		}
 		iterations++;
+	/*	if (iterations > tmpIterations) {
+			tmpIterations = iterations;
+			cout << tmpIterations << "/" << MAX_ITERATIONS << endl;
+		}*/
 	}
 
 	return iterations;
